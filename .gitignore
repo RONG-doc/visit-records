@@ -1,0 +1,26 @@
+# 依赖与构建产物
+node_modules/
+dist/
+build/
+
+# Python（本仓库暂时没有后端，预留给后续实验）
+__pycache__/
+*.py[cod]
+.venv/
+
+# 环境变量与密钥：绝不入库
+.env
+.env.*
+!.env.example
+
+# 日志与临时文件
+*.log
+npm-debug.log*
+.tmp/
+
+# 操作系统与编辑器
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

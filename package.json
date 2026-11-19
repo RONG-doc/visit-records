@@ -1,0 +1,13 @@
+{
+  "name": "visit-records",
+  "version": "1.0.0",
+  "private": true,
+  "description": "医院信息系统实验三：就诊记录列表与详情页（零依赖，npm run dev 直接启动）",
+  "scripts": {
+    "dev": "node tools/dev-server.js",
+    "start": "node tools/dev-server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
