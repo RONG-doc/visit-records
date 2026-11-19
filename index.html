@@ -30,6 +30,21 @@
       <p class="count">共 <strong id="count">--</strong> 条</p>
     </div>
 
+    <section class="toolbar">
+      <label class="field">
+        <span>科室</span>
+        <select id="filter-dept">
+          <option value="">全部科室</option>
+        </select>
+      </label>
+      <label class="field">
+        <span>关键词</span>
+        <input id="filter-kw" type="search" placeholder="患者姓名 / 就诊号" autocomplete="off">
+      </label>
+      <button id="filter-reset" class="btn btn-ghost" type="button">重置</button>
+      <span id="filter-hint" class="toolbar-hint"></span>
+    </section>
+
     <section class="card">
       <table class="data-table">
         <thead>
