@@ -4,6 +4,12 @@
  */
 const tbody = document.getElementById('rows');
 const countEl = document.getElementById('count');
+const deptEl = document.getElementById('filter-dept');
+const kwEl = document.getElementById('filter-kw');
+const resetEl = document.getElementById('filter-reset');
+const hintEl = document.getElementById('filter-hint');
+
+let allVisits = [];
 
 const STATUS_CLASS = {
   '已就诊': 'ok',
@@ -47,7 +53,43 @@ function render(list) {
   countEl.textContent = String(list.length);
   tbody.innerHTML = list.length
     ? list.map(rowHtml).join('')
-    : '<tr><td colspan="7" class="empty">暂无就诊记录</td></tr>';
+    : '<tr><td colspan="7" class="empty">没有符合条件的就诊记录</td></tr>';
+  hintEl.textContent = list.length === allVisits.length
+    ? ''
+    : `筛选后 ${list.length} / ${allVisits.length} 条`;
+}
+
+/** 按科室 + 关键词过滤；关键词匹配患者姓名或就诊号 */
+function applyFilter() {
+  const dept = deptEl.value;
+  const kw = kwEl.value.trim().toLowerCase();
+  const filtered = allVisits.filter((v) => {
+    const deptOk = !dept || v.department === dept;
+    const kwOk = !kw
+      || v.patient_name.toLowerCase().includes(kw)
+      || v.visit_no.toLowerCase().includes(kw);
+    return deptOk && kwOk;
+  });
+  render(filtered);
+}
+
+function fillDepartments(list) {
+  const departments = [...new Set(list.map((v) => v.department))].sort(
+    (a, b) => a.localeCompare(b, 'zh-Hans-CN'),
+  );
+  deptEl.innerHTML = ['<option value="">全部科室</option>']
+    .concat(departments.map((d) => `<option value="${esc(d)}">${esc(d)}</option>`))
+    .join('');
+}
+
+function bindFilters() {
+  deptEl.addEventListener('change', applyFilter);
+  kwEl.addEventListener('input', applyFilter);
+  resetEl.addEventListener('click', () => {
+    deptEl.value = '';
+    kwEl.value = '';
+    applyFilter();
+  });
 }
 
 function showError(message) {
@@ -62,5 +104,10 @@ async function load() {
 }
 
 load()
-  .then(render)
+  .then((list) => {
+    allVisits = list;
+    fillDepartments(list);
+    bindFilters();
+    render(list);
+  })
   .catch((err) => showError(err.message));
