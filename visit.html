@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>就诊详情 · 示范市第一人民医院</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="logo">＋</span>
+      <span class="brand-text">
+        <strong>示范市第一人民医院</strong>
+        <small>门诊部 · 就诊记录</small>
+      </span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">就诊记录</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <a class="back-link" href="index.html">← 返回就诊记录列表</a>
+
+    <div class="page-head">
+      <div>
+        <h1 id="page-title">就诊详情</h1>
+        <p class="muted" id="page-sub">加载中…</p>
+      </div>
+      <p class="count">就诊号 <strong id="visit-no">--</strong></p>
+    </div>
+
+    <div class="detail-grid">
+      <section class="panel">
+        <div class="panel-head">
+          <h2>基本信息与就诊信息</h2>
+          <span id="status"></span>
+        </div>
+        <div class="panel-body">
+          <dl class="fields" id="fields"></dl>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>处方摘要</h2>
+        </div>
+        <div class="panel-body" id="prescription-box">
+          <p class="muted">加载中…</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-foot">本页面为《医院信息系统》课程教学演示，患者数据均为虚构。</footer>
+
+  <script src="js/detail.js"></script>
+</body>
+</html>
