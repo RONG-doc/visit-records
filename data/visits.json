@@ -1,0 +1,144 @@
+[
+  {
+    "id": "V001",
+    "visit_no": "20261113001",
+    "patient_name": "王秀兰",
+    "gender": "女",
+    "age": 62,
+    "department": "心血管内科",
+    "doctor": "王建国",
+    "diagnosis": "原发性高血压（2 级，中危）",
+    "visit_time": "2026-11-13T08:35:00",
+    "status": "已就诊",
+    "fee": 186.5,
+    "chief_complaint": "反复头晕 3 年，加重 1 周，伴晨起后颈部发紧。",
+    "prescription": [
+      { "name": "苯磺酸氨氯地平片", "spec": "5mg×7 片", "usage": "5mg 每日 1 次，晨服" },
+      { "name": "阿司匹林肠溶片", "spec": "100mg×30 片", "usage": "100mg 每日 1 次，餐后" }
+    ],
+    "note": "建议低盐饮食，两周后复查血压；如出现胸闷立即就诊。"
+  },
+  {
+    "id": "V002",
+    "visit_no": "20261113002",
+    "patient_name": "李国强",
+    "gender": "男",
+    "age": 45,
+    "department": "消化内科",
+    "doctor": "李明华",
+    "diagnosis": "慢性胃炎（非萎缩性）",
+    "visit_time": "2026-11-13T09:10:00",
+    "status": "已就诊",
+    "fee": 142,
+    "chief_complaint": "上腹隐痛 2 月余，餐后加重，偶有反酸。",
+    "prescription": [
+      { "name": "奥美拉唑肠溶胶囊", "spec": "20mg×14 粒", "usage": "20mg 每日 1 次，早餐前" },
+      { "name": "铝碳酸镁咀嚼片", "spec": "0.5g×20 片", "usage": "1g 每日 3 次，餐后嚼服" }
+    ],
+    "note": "忌辛辣与浓茶，规律三餐；四周后复诊评估。"
+  },
+  {
+    "id": "V003",
+    "visit_no": "20261113003",
+    "patient_name": "张雅雯",
+    "gender": "女",
+    "age": 28,
+    "department": "呼吸内科",
+    "doctor": "张淑珍",
+    "diagnosis": "急性上呼吸道感染",
+    "visit_time": "2026-11-13T09:45:00",
+    "status": "已就诊",
+    "fee": 98.5,
+    "chief_complaint": "咽痛、流涕 3 天，昨晚低热 37.8℃。",
+    "prescription": [
+      { "name": "连花清瘟胶囊", "spec": "0.35g×24 粒", "usage": "4 粒 每日 3 次" }
+    ],
+    "note": "多饮水、注意休息；体温超过 38.5℃ 或持续 3 天不缓解请复诊。"
+  },
+  {
+    "id": "V004",
+    "visit_no": "20261113004",
+    "patient_name": "陈志远",
+    "gender": "男",
+    "age": 71,
+    "department": "骨科",
+    "doctor": "陈志远",
+    "diagnosis": "膝关节骨性关节炎（双膝）",
+    "visit_time": "2026-11-13T10:20:00",
+    "status": "已就诊",
+    "fee": 312,
+    "chief_complaint": "双膝疼痛 5 年，上下楼明显，近半年加重。",
+    "prescription": [
+      { "name": "塞来昔布胶囊", "spec": "200mg×12 粒", "usage": "200mg 每日 2 次" },
+      { "name": "氨基葡萄糖片", "spec": "0.24g×60 片", "usage": "0.48g 每日 3 次" }
+    ],
+    "note": "控制体重，避免深蹲与爬山；必要时行关节腔注射。"
+  },
+  {
+    "id": "V005",
+    "visit_no": "20261113005",
+    "patient_name": "刘思彤",
+    "gender": "女",
+    "age": 6,
+    "department": "儿科",
+    "doctor": "刘雅雯",
+    "diagnosis": "急性支气管炎",
+    "visit_time": "2026-11-13T10:55:00",
+    "status": "已就诊",
+    "fee": 156.8,
+    "chief_complaint": "咳嗽 5 天，夜间加重，无发热。",
+    "prescription": [
+      { "name": "阿奇霉素干混悬剂", "spec": "0.1g×6 袋", "usage": "0.2g 每日 1 次，连用 3 天" },
+      { "name": "小儿止咳糖浆", "spec": "100ml", "usage": "5ml 每日 3 次" }
+    ],
+    "note": "保持室内通风；如出现呼吸困难、精神差请立即就诊。"
+  },
+  {
+    "id": "V006",
+    "visit_no": "20261113006",
+    "patient_name": "赵芳",
+    "gender": "女",
+    "age": 34,
+    "department": "眼科",
+    "doctor": "周敏",
+    "diagnosis": "干眼症",
+    "visit_time": "2026-11-13T13:40:00",
+    "status": "待就诊",
+    "fee": 0,
+    "chief_complaint": "双眼干涩、异物感半年，长时间用眼后加重。",
+    "prescription": [],
+    "note": "尚未开始接诊。"
+  },
+  {
+    "id": "V007",
+    "visit_no": "20261113007",
+    "patient_name": "孙浩然",
+    "gender": "男",
+    "age": 39,
+    "department": "皮肤科",
+    "doctor": "徐文静",
+    "diagnosis": "慢性湿疹",
+    "visit_time": "2026-11-13T14:15:00",
+    "status": "待就诊",
+    "fee": 0,
+    "chief_complaint": "双前臂皮疹伴瘙痒 1 年，反复发作。",
+    "prescription": [],
+    "note": "尚未开始接诊。"
+  },
+  {
+    "id": "V008",
+    "visit_no": "20261113008",
+    "patient_name": "周建国",
+    "gender": "男",
+    "age": 58,
+    "department": "神经内科",
+    "doctor": "何立新",
+    "diagnosis": "紧张性头痛",
+    "visit_time": "2026-11-13T15:00:00",
+    "status": "已取消",
+    "fee": 0,
+    "chief_complaint": "双侧颞部胀痛 3 月，与工作压力相关。",
+    "prescription": [],
+    "note": "患者本人取消本次预约。"
+  }
+]

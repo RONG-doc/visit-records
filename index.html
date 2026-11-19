@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>就诊记录 · 示范市第一人民医院</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="logo">＋</span>
+      <span class="brand-text">
+        <strong>示范市第一人民医院</strong>
+        <small>门诊部 · 就诊记录</small>
+      </span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html" class="active">就诊记录</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <div class="page-head">
+      <div>
+        <h1>就诊记录</h1>
+        <p class="muted">门诊患者的历次就诊明细，点击「查看」进入详情。</p>
+      </div>
+      <p class="count">共 <strong id="count">--</strong> 条</p>
+    </div>
+
+    <section class="card">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>就诊号</th>
+            <th>患者姓名</th>
+            <th>科室</th>
+            <th>诊断</th>
+            <th>就诊时间</th>
+            <th>状态</th>
+            <th class="col-action">操作</th>
+          </tr>
+        </thead>
+        <tbody id="rows">
+          <tr><td colspan="7" class="empty">加载中…</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="site-foot">本页面为《医院信息系统》课程教学演示，患者数据均为虚构。</footer>
+
+  <script src="js/list.js"></script>
+</body>
+</html>
