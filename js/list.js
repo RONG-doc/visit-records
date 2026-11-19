@@ -49,10 +49,18 @@ function rowHtml(visit) {
     </tr>`;
 }
 
+/** 按就诊时间倒序（最近的排前面）；不改动传入数组 */
+function sortByVisitTimeDesc(list) {
+  return [...list].sort(
+    (a, b) => new Date(b.visit_time).getTime() - new Date(a.visit_time).getTime(),
+  );
+}
+
 function render(list) {
+  const rows = sortByVisitTimeDesc(list);
   countEl.textContent = String(list.length);
-  tbody.innerHTML = list.length
-    ? list.map(rowHtml).join('')
+  tbody.innerHTML = rows.length
+    ? rows.map(rowHtml).join('')
     : '<tr><td colspan="7" class="empty">没有符合条件的就诊记录</td></tr>';
   hintEl.textContent = list.length === allVisits.length
     ? ''
